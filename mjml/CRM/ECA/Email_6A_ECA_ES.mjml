@@ -1,0 +1,48 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Lato" href="https://fonts.googleapis.com/css?family=Lato:400,700" />
+    <mj-all font-family="Lato, Arial" />
+  </mj-head> 
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="20px" color="#E59226"> <span style="font-weight:700;">Hola {! Opp.Account.Name}, </span></mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >En poco tiempo, {! Opp.IEG_Student_Name__c} disfrutará de una experiencia única y divertida con alumnos internacionales de diversas nacionalidades, ¡estamos deseando conocerle! Le recordamos que el programa debe de estar abonado en su totalidad antes del inicio, por lo que le recomendamos realizar el pago: </mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >A través de 
+        <a href="{!Opp. IEG_Payment_link__c }" style="color:#61BB46;"><b>nuestra plataforma segura de pago</b></a> en línea mediante tarjeta de crédito (aceptamos Visa o Mastercard). </mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Transferencia bancaria (deberá enviarnosuna copia de la transacción si elige esta opción).<br/> Para completar una transferencia bancaria, deberá indicar su número de referencia de estudiante: <b>{! Opp.Student_Id__c}</b> como concepto de la transferencia bancaria, junto con nombre y apellidos:<br/>
+        <b>Banco:</b> LA CAIXA<br/>
+        <b>Titular:</b> Enfocamp S.L<br/>
+        <b>Nª de cuenta:</b> ES45 2100 5641 02 02 00021746 
+        </mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Si le surge alguna consulta, no dude en ponerse en contacto con nosotros en la siguiente dirección <a href="mailto:camps@enforex.es">camps@enforex.es</a>, estaremos encantados de ayudarle.</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Un saludo.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="20px" color="#E59226" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Equipo Enforex Camps</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="13px" line-height="20px" >{!opp.IEG_Assigned_to_email__c}<br/>T.: {!opp.IEG_Assigned_to_phone__c}<br/></mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="11px" line-height="20px">
+        Calle Gustavo Fernánde Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+         <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/donQuijoteSchools" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/donquijote_school/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/donQuijoteschool" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#61BB46" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="http://www.enforex.es/images/design/enfocamp-white-01.png" />
+      </mj-column>
+      /images
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

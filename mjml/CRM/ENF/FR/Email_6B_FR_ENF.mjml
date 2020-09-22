@@ -1,0 +1,66 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" />
+
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Votre experience en espagnol avec Enforex {!opp.IEG_Destination__c} commence dans 2 semaines!</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Malheureusement, nous n’avons pas encore reçu le reste du paiement.</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Vous pouvez faire le paiement de {!opp.IEG_Pending_To_Pay__c}{!opp.CurrencyIsoCode} via:
+          <ul>
+            <li><b>Notre plate-forme de paiement en ligne</b> par carte de crédit (Visa et Mastercard acceptées).</li>
+            <li><b>Virement bancaire </b>(veuillez, s’il vous plaît, nous envoyer une copie du virement une fois effectué si vous choisissez cette option). Pour réaliser un transfert bancaire, vous devez indiquer votre ID d’étudiant: {!opp.Student_Id__c} comme référence aux coordonnées suivantes:</li>
+            <br>
+            <li style="font-size:14px;font-family:Open Sans, Arial;"><b>Nom du Compte: </b>IDEAL EDUCATION GROUP, S.L.</li>
+            <li style="font-size:14px;font-family:Open Sans, Arial;"><b>Nom de la banque: </b> SABADELL</li>
+            <li style="font-size:14px;font-family:Open Sans, Arial;"><b>Adresse de la succursale: </b> Enrique Larreta, 12 - 28036 Madrid – Espagne</li>
+            <li style="font-size:14px;font-family:Open Sans, Arial;"><b>Code SWIFT/BIC: </b> BSABESBBXXX</li>
+          </ul>
+        </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">EURO (€) Compte pour les cours en Espagne et à Cuba</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li><b>Numéro de compte: </b> 0081-0298-4800-0121-4223</li>
+            <li><b>IBAN:</b> ES26-0081-0298-4800-0121-4223</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">USD ($)Compte pour les cours en Amérique latine</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li><b>Numéro de compte: </b> 0081-0298-4200-7053-0365</li>
+            <li><b>IBAN:</b> ES24-0081-0298-4200-7053-0365</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">¡Hasta pronto en {!opp.IEG_destination__c}! </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Un saludo, </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" line-height="20px">{!opp.IEG_Assigned_to_email__c}<br />T.: {!opp.IEG_Assigned_to_phone__c}<br /></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="11px" line-height="20px">
+          Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/enforex" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/enforex_schools/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/enforexschools/" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#004890" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enforex.com/images/crm/logo-footer-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

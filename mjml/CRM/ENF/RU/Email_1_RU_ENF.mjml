@@ -1,0 +1,40 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" />
+    
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890">Hola Меня зовут Лола, и я рада приветствовать вас в Enforex!</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >Мои коллеги свяжутся с вами в ближайшее время, чтобы помочь подобрать вам испанский курс, который идеально подходит для вас. Вы сможете выбрать тип программы, продолжительность, направление и тип жилья, который наилучшим образом соответствует вашим потребностям. Мы будем рады вам помочь организовать ваше путешествие.</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >¡Hasta pronto!</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >Лола Серрано</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Академический департамент</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" line-height="20px" >{!opp.IEG_Assigned_to_email__c}<br/>T.: {!opp.IEG_Assigned_to_phone__c}<br/></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="11px" line-height="20px">
+        Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+         <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/enforex" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/enforex_schools/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/enforexschools/" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#004890" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enforex.com/images/crm/logo-footer-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

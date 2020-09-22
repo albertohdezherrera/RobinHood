@@ -1,0 +1,670 @@
+
+    <!doctype html>
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+      <head>
+        <title>
+          
+        </title>
+        <!--[if !mso]><!-- -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--<![endif]-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+          #outlook a { padding:0; }
+          body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }
+          table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }
+          img { border:0;height:auto;line-height:100%; outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; }
+          p { display:block;margin:13px 0; }
+        </style>
+        <!--[if mso]>
+        <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+        <!--[if lte mso 11]>
+        <style type="text/css">
+          .outlook-group-fix { width:100% !important; }
+        </style>
+        <![endif]-->
+        
+      <!--[if !mso]><!-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" rel="stylesheet" type="text/css">
+        <style type="text/css">
+          @import url(https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700);
+        </style>
+      <!--<![endif]-->
+
+    
+        
+    <style type="text/css">
+      @media only screen and (min-width:480px) {
+        .mj-column-per-100 { width:100% !important; max-width: 100%; }
+      }
+    </style>
+    
+  
+        <style type="text/css">
+        
+        
+
+    @media only screen and (max-width:480px) {
+      table.full-width-mobile { width: 100% !important; }
+      td.full-width-mobile { width: auto !important; }
+    }
+  
+        </style>
+        
+        
+      </head>
+      <body style="background-color:#ffffff;">
+        
+        
+      <div
+         style="background-color:#ffffff;"
+      >
+        
+      
+      <!--[if mso | IE]>
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:900px;" width="900"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div  style="margin:0px auto;max-width:900px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
+              >
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               class="" style="vertical-align:top;width:900px;"
+            >
+          <![endif]-->
+            
+      <div
+         class="mj-column-per-100 outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:15px;line-height:130%;text-align:left;color:#000000;"
+      >Plus que quelques jours avant que votre aventure commence et que vous puissiez profiter de votre cours d'espagnol !</div>
+    
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:15px;line-height:22px;text-align:left;color:#444444;"
+      >Les données suivantes, relatives à votre séjour, ont été confirmées:</div>
+    
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:14px;line-height:22px;text-align:left;color:#444444;"
+      ><ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Nom de l’étudiant: </b> {!opp.IEG_Student_Name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Cours: </b> {!opp.IEG_Name_of_the_course__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Destination:</b> {!opp.IEG_Name_of_School__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Date de début:</b>
+              <mj-raw>
+                <apex:outputtext value="{0,date,dd/MM/yyyy}">
+                  <apex:param value="{!opp.IEG_Course_starts__c}">
+                  </apex:param>
+                </apex:outputtext>
+              </mj-raw>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Date de fin:</b>
+              <mj-raw>
+                <apex:outputtext value="{0,date,dd/MM/yyyy}">
+                  <apex:param value="{!opp.IEG_Course_ends__c}">
+                  </apex:param>
+                </apex:outputtext>
+              </mj-raw>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Type d’hébergement: </b> {!opp.IEG_Type_of_accomodation__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Date d’arrivée:</b></li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Date de départ:</b></li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Extra: </b>{!opp.IEG_Extras__c}</li>
+          </ul></div>
+    
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:16px;font-weight:700;line-height:22px;text-align:left;color:#444444;"
+      >INFOS SUR {!OPP.IEG_DESTINATION__C}</div>
+    
+              </td>
+            </tr>
+          <apex:repeat value="{!escuelas}" var="escuela">
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:14px;line-height:22px;text-align:left;color:#444444;"
+      ><ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Adresse: </b> {!escuela.IEG_School_Address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Lien vers Google Maps: </b> {!escuela.IEG_Link_address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Téléphone: </b> {!escuela.IEG_Phone_school__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Personne de contact au Centre: </b> {!escuela.IEG_school_contact__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Instructions pour votre premier jour:</b></li>
+            <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Lors du premier jour de classe, vous devez arriver à {!escuela.IEG_Start_time__c} et signaler votre arrivée auprès de l'école pour réaliser le test de niveau. </mj-text>
+            <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">
+              <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Veuillez télécharger votre guide de Bienvenue/de l'élève en suivant ce <b>lien</b>. Il contient des informations utiles et importantes sur le premier jour de l'école ainsi que des informations utiles, jour après jour.</mj-text>
+            </mj-text>
+          </ul></div>
+    
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:15px;font-weight:700;line-height:22px;text-align:left;color:#000000;"
+      >DÉTAILS DU LOGEMENT</div>
+    
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:15px;line-height:22px;text-align:left;color:#000000;"
+      >Dans ce mail je vous joins les détails relatifs à votre hébergement, cliquez sur le lien pour le télécharger.</div>
+    
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:15px;line-height:22px;text-align:left;color:#000000;"
+      >Veuillez lire le règlement de logement concernant votre séjour. Vous le trouverez en cliquant sur ce <a href="" style="color:#004890;">lien</a>.
+          Merci de nous faire part de votre heure d’arrivée, même si vous n’avez pas réservé notre service de transfert.</div>
+    
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:15px;line-height:22px;text-align:left;color:#000000;"
+      >Si vous avez des questions concernant nos écoles, votre hébergement ou votre cours n’hésitez pas à nous <a href="" style="color:#004890;">contacter</a>, nous serons heureux de vous aider.</div>
+    
+              </td>
+            </tr>
+          </apex:repeat>
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:15px;line-height:22px;text-align:left;color:#444444;"
+      >¡Hasta pronto!</div>
+    
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:15px;line-height:22px;text-align:left;color:#444444;"
+      >Bien cordialement</div>
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:900px;" width="900"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div  style="margin:0px auto;max-width:900px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
+              >
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               class="" style="vertical-align:top;width:900px;"
+            >
+          <![endif]-->
+            
+      <div
+         class="mj-column-per-100 outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:20px;font-weight:700;line-height:22px;text-align:left;color:#004890;"
+      >{!opp.IEG_Useradmin__r.Name}</div>
+    
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:13px;font-style:italic;font-weight:300;line-height:1;text-align:left;color:#444444;"
+      >Academic Advising Department</div>
+    
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:13px;line-height:20px;text-align:left;color:#444444;"
+      >{!opp.IEG_Useradmin__r.IEG_Email_DQU__c}<br />T.: {!opp.IEG_Useradmin__r.Phone}<br /></div>
+    
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Open Sans, Arial;font-size:11px;line-height:20px;text-align:left;color:#444444;"
+      >Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain</div>
+    
+              </td>
+            </tr>
+          
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      
+     <!--[if mso | IE]>
+      <table
+         align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+      >
+        <tr>
+      
+              <td>
+            <![endif]-->
+              <table
+                 align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;"
+              >
+                
+      <tr
+        
+      >
+        <td  style="padding:4px;">
+          <table
+             border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;border-radius:3px;width:30px;"
+          >
+            <tr>
+              <td  style="font-size:0;height:30px;vertical-align:middle;width:30px;">
+                <a  href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/enforex" target="_blank">
+                    <img
+                       height="30" src="https://static.donquijote.org/images/firmas/facebook.jpg" style="border-radius:3px;display:block;" width="30"
+                    />
+                  </a>
+                </td>
+              </tr>
+          </table>
+        </td>
+        
+      </tr>
+    
+              </table>
+            <!--[if mso | IE]>
+              </td>
+            
+              <td>
+            <![endif]-->
+              <table
+                 align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;"
+              >
+                
+      <tr
+        
+      >
+        <td  style="padding:4px;">
+          <table
+             border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;border-radius:3px;width:30px;"
+          >
+            <tr>
+              <td  style="font-size:0;height:30px;vertical-align:middle;width:30px;">
+                <a  href="https://www.instagram.com/enforex_schools/" target="_blank">
+                    <img
+                       height="30" src="https://static.donquijote.org/images/firmas/instagram.jpg" style="border-radius:3px;display:block;" width="30"
+                    />
+                  </a>
+                </td>
+              </tr>
+          </table>
+        </td>
+        
+      </tr>
+    
+              </table>
+            <!--[if mso | IE]>
+              </td>
+            
+              <td>
+            <![endif]-->
+              <table
+                 align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;"
+              >
+                
+      <tr
+        
+      >
+        <td  style="padding:4px;">
+          <table
+             border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;border-radius:3px;width:30px;"
+          >
+            <tr>
+              <td  style="font-size:0;height:30px;vertical-align:middle;width:30px;">
+                <a  href="https://www.youtube.com/user/enforexschools/" target="_blank">
+                    <img
+                       height="30" src="https://static.donquijote.org/images/firmas/yotube.jpg" style="border-radius:3px;display:block;" width="30"
+                    />
+                  </a>
+                </td>
+              </tr>
+          </table>
+        </td>
+        
+      </tr>
+    
+              </table>
+            <!--[if mso | IE]>
+              </td>
+            
+          </tr>
+        </table>
+      <![endif]-->
+    
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:900px;" width="900"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div  style="background:#004890;background-color:#004890;margin:0px auto;max-width:900px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#004890;background-color:#004890;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:10px;text-align:center;"
+              >
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               class="" style="vertical-align:top;width:880px;"
+            >
+          <![endif]-->
+            
+      <div
+         class="mj-column-per-100 outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        
+            <tr>
+              <td
+                 align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:126px;">
+              
+      <img
+         height="auto" src="https://www.enforex.com/images/crm/logo-footer-crm.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="126"
+      />
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:900px;" width="900"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div  style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:900px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:10px;text-align:center;"
+              >
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               class="" style="vertical-align:top;width:880px;"
+            >
+          <![endif]-->
+            
+      <div
+         class="mj-column-per-100 outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      <![endif]-->
+    
+    
+      </div>
+    
+      </body>
+    </html>
+  

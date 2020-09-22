@@ -1,0 +1,62 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Lato" href="https://fonts.googleapis.com/css?family=Lato:400,700" />
+    <mj-all font-family="Lato, Arial" />
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="20px" color="#E59226">¡Hola nombre padre/madre!<span style="font-weight:700;"> {!opp.Account.Name}</span></mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >¡Fenomenal! Hemos recibido los datos para poder hacer la reserva de (nombre del alumno), en el campamento elegido.</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Estos son los detalles de su programa:</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="14px" line-height="22px" >
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Nombre del estudiante: </b> {! Opp.IEG_Student_Name__c}</li>
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Curso: </b> {! Opp.IEG_Name_of_the_course__c}</li>
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Destino:</b> {! Opp.IEG_Name_of_School__c}</li>
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Fecha de inicio:</b></li>
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Fecha final:</b></li>
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Tipo de alojamiento: </b>  {! Opp.IEG_Type_of_accomodation__c}</li>
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Fecha de llegada: </b>{! Opp.IEG_Arrival_date__c}</li>
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Fecha de salida: </b>  {! Opp.IEG_Exit_date__c}</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Puede formalizar su reserva realizando un pago de 300€  en concepto de depósito (¿???¿ a través de:</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="14px" line-height="22px" >
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:15px;font-family:Lato, Arial;">Nuestra plataforma segura de pago en línea mediante tarjeta de crédito (aceptamos Visa o Mastercard).</li>
+            <li style="font-size:15px;font-family:Lato, Arial;">Transferencia bancaria (envíeme una copia de la transacción completada si elige esta opción). Para completar la transferencia bancaria, deberá indicar su número de referencia de estudiante: {! Opp.Student_Id__c} como concepto de la transferencia bancaria, junto con nombre y apellidos:</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Una vez que haya completado el pago, nos pondremos en contacto con usted para confirmar su reserva. También para informarle si hay algún otro dato que necesitemos conocer. Si tiene algún problema durante el proceso de pago, contáctenos y con gusto lo ayudaremos.</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >¡Seguimos en contacto!</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >¡Hasta pronto!</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="20px" color="#E59226" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="13px" line-height="20px" >{!opp.IEG_Assigned_to_email__c}<br/>T.: {!opp.IEG_Assigned_to_phone__c}<br/></mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="11px" line-height="20px">
+        Calle Gustavo Fernánde Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+         <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/donQuijoteSchools" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/donquijote_school/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/donQuijoteschool" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#61BB46" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enfocamp.com/images/assets/enfocamp-white.svg" />
+      </mj-column>
+      /images
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

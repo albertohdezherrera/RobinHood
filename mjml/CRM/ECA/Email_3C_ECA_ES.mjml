@@ -1,0 +1,41 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Lato" href="https://fonts.googleapis.com/css?family=Lato:400,700" />
+    <mj-all font-family="Lato, Arial" />
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="20px" color="#E59226">Hola<span style="font-weight:700;">{!opp.Account.Name}</span></mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Anteriormente le habíamos enviado información sobre los programas que desarrollamos. ¡Seguro que le han parecido interesantes!  No dude en ponerse en contacto si tiene alguna pregunta o duda específica con la que podamos ayudarle. ¡Le facilito el teléfono nuevamente {! Opp.IEG_Assigned_to_phone__c} 91 594 22 36, no dude en llamarnos en cualquier momento.</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >¡Esperamos su llamada!</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Un saludo</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="20px" color="#E59226" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="13px" line-height="20px" >{!opp.IEG_Assigned_to_email__c}<br/>T.: {!opp.IEG_Assigned_to_phone__c}<br/></mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="11px" line-height="20px">
+        Calle Gustavo Fernánde Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+         <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/donQuijoteSchools" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/donquijote_school/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/donQuijoteschool" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#61BB46" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enfocamp.com/images/assets/enfocamp-white.svg" />
+      </mj-column>
+      /images
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

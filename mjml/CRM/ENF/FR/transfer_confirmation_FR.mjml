@@ -1,0 +1,73 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" />
+
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890"><b>CONFIRMATION de SERVICE de TRANSFERT</b></mj-text>
+
+        <mj-text font-family="Open Sans, Arial" font-size="15px" color="#444">Cher/chère <span style="font-weight:700;">{!l_oppLine[0].IEG_Opportunity__r.Account.Name}</span>,</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Merci de verifier les informations que nous avons sur vos transports et faîtes-nous savoir si ils sont corrects.</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Veuillez noter que le service n’aura pas lieu si nous n’avons pas reçu le paiement complet.</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Nous viendrons vous récupérer avec les détails suivants:</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Open Sans, Arial;"><b>Date d’arrivée</b> </li>
+            <li style="font-size:14px;font-family:Open Sans, Arial;"><b>Jour et heure du transfert:</b></li>
+            <li style="font-size:14px;font-family:Open Sans, Arial;"><b>Lieu du transfert</b></li>
+            <li style="font-size:14px;font-family:Open Sans, Arial;"><b>Numéro de vol/ Train / Bus</b>
+            </li>
+            <li style="font-size:14px;font-family:Open Sans, Arial;"><b>Ville de provenance</b>
+            </li>
+            <li style="font-size:14px;font-family:Open Sans, Arial;"><b>Commentaires:</b> </li>
+          </ul>
+        </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Veuillez consulter vos informations de voyage et nous informer immédiatement si vous devez apporter des modifications. Nous ne sommes pas responsables de la non-conformité du service de navette en raison d'informations incorrectes, nous ne proposerons donc aucun remboursement. Si vous avez besoin de nous contacter à votre arrivée, veuillez utiliser le numéro d'urgence correspondant à la ville dans laquelle vous allez étudier.</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Il est très important que vous lisiez les informations et que vous les apportiez avec vous:</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">INSTRUCTIONS DU SERVICE DE TRANSFERT AUX ARRIVÉES À {!l_oppline[0].IEG_Product_Catalog__r.IEG_School__r.IEG_Province__c}</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">En cas de retard ou si vous avez d'autres problèmes liés à votre arrivée, veuillez contacter la personne responsable de votre service de navette au numéro d'urgence de l'école: {!l_oppline[0].IEG_Product_Catalog__r.IEG_School__r.IEG_Emergency_phone__c}</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Les modifications qui affectent le service de navette (arrivée tardive, modification des détails du vol, vols manqués, etc.) doivent être communiquées afin d'annuler ou de reporter le service. Si aucune modification n'a été notifiée au moment de l'arrivée, le chauffeur qui vous est assigné n'attendra pas plus d'une heure et trente minutes après l'heure fixée.</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">INSTRUCTIONS DU SERVICE DE TRANSFERT AUX DÉPARTS À {!l_oppline[0].IEG_Product_Catalog__r.IEG_School__r.IEG_Province__c}</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Au cours de la dernière semaine de votre programme, un membre de notre personnel vous contactera et vous indiquera l'heure à laquelle vous serez pris en charge le dernier jour de votre séjour, à condition d'avoir réservé et payé le service au préalable. Le même numéro de téléphone d'urgence est valable pour les vols de départ.</mj-text>
+
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890" line-height="22px" font-weight="700">{!opp.IEG_Useradmin__r.Name}</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" line-height="20px">{!opp.IEG_Useradmin__r.IEG_Email_DQU__c}<br />T.: {!opp.IEG_Useradmin__r.Phone}<br /></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="11px" line-height="20px">
+          Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/enforex" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/enforex_schools/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/enforexschools/" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#004890" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enforex.com/images/crm/logo-footer-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

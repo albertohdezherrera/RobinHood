@@ -1,0 +1,92 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,700" />
+
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="20px" color="#D2283D">您好 {!opp.Account.Name}</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">我是课程预订部门的{!opp.IEG_Useradmin__r.Name}，欢迎您来到我们在{!opp.IEG_Destination__c}的合作伙伴学校。我会在您制定计划到抵达学校这段期间帮助您。当您正在准备在{!opp.IEG_Destination__c}加入{!opp.IEG_Name_of_the_course__c}的课程学习西班牙语，感受西班牙文化，有一些很重要的事情需要您记住:</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="16px" line-height="22px">感谢您已付清定金，请您在开课之间结清剩余款项。</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="16px" line-height="22px">这是您确认单的细节:</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="16px" line-height="22px"><b>学生姓名:</b> {!opp.IEG_Student_Name__c}</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li><b>课程:</b> {!opp.IEG_Name_of_the_course__c}</li>
+            <li><b>地点:</b> {!opp.IEG_Name_of_School__c}</li>
+            <li><b>开始时间:</b>
+              <apex:outputText value="{0,date,dd/MM/yyyy}">
+                <apex:param value="{!opp.IEG_Course_starts__c}" />
+              </apex:outputText>
+            </li>
+            <li><b>结束时间:</b>
+              <apex:outputText value="{0,date,dd/MM/yyyy}">
+                <apex:param value="{!opp.IEG_Course_ends__c}" />
+              </apex:outputText>
+            </li>
+            <li><b>住宿类型:</b> {!opp.IEG_Type_of_accomodation__c}</li>
+            <li><b>入住时间:</b>
+              <apex:outputText value="{0,date,dd/MM/yyyy}">
+                <apex:param value="{!opp.IEG_Course_ends__c}" />
+              </apex:outputText>
+            </li>
+            <li><b>退房时间:</b>
+              <apex:outputText value="{0,date,dd/MM/yyyy}">
+                <apex:param value="{!opp.IEG_Course_ends__c}" />
+              </apex:outputText>
+            </li>
+            <li><b>备注:</b> {!opp.IEG_Extras__c}</li>
+          </ul>
+        </mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">细节{!OPP.IEG_DESTINATION__C}</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li><b>学校地址:</b> {!escuela.IEG_School_Address__c}</li>
+            <li><b>地图链接:</b> {!escuela.IEG_Link_address__c}</li>
+            <li><b>学校电话:</b> {!escuela.IEG_Phone_school__c}</li>
+            <li><b>学校管理人员:</b> {!escuela.IEG_school_contact__c}</li>
+            <li><b>第一天报道细节:</b></li>
+            <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">第一天上课，您需要在{!escuela.IEG_Start_time__c}点到校。</mj-text>
+          </ul>
+        </mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">为了让您进入到更适合您的等级。请您点开测试连接，完成测试并尽快提交。</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">如果你还没有确定是否预定住宿，请与我们联系。记住，我们也提供接机、送机服务。请您点击链接 填写旅程信息</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">如果您需要任何帮助，请随时与我联系！</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">再会，祝安~</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="20px" color="#D2283D" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="13px" line-height="20px">{!opp.IEG_Assigned_to_email__c}<br />T.: {!opp.IEG_Assigned_to_phone__c}<br /></mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="11px" line-height="20px">
+          Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/donQuijoteSchools" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/donquijote_school/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/donQuijoteschool" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#D2283D" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="http://static.donquijote.org/images/mail/CRM/dq-logo-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

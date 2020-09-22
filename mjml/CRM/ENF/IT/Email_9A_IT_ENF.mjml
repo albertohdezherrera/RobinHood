@@ -1,0 +1,101 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" />
+
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="15px" color="#444" line-height="22px">Grazie per aver <b>completato il pagamento.</b> Siamo felici di poterti accogliere alla Enforex. In allegato troverai la fattura aggiornata.</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Se hai richiesto l’alloggio, riceverai i dettali dello stesso almeno due settimane prima del tuo arrivo.</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Se non hai ancora compilato le informazioni sul tuo arrivo per il transfer dall’aeroporto o sei hai bisogno di modificarle, lo potrai fare tramite questo <a href="{!opp.IEG_Link_Datos_recogida__c}" style="color:#004890;">link.</a> Tienici informati sull’orario del tuo arrivo anche se non hai prenotato questo servizio.</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">In allegato troverai un’autorizzazione per minori, per favore mandacela firmata. </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Facci sapere se hai altre domande sulla scuola o sulla destinazione, saremo lieti di aiutarti. </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Ecco i dettagli della tua prenotazione:</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px"><b>Nome dello studente:</b> {!opp.IEG_Student_Name__c}</mj-text>
+
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:15px;font-family:Open Sans, Arial;"><b>Corso: </b> {!opp.IEG_Name_of_the_course__c}</li>
+            <li style="font-size:15px;font-family:Open Sans, Arial;"><b>Destinazione:</b> {!opp.IEG_Name_of_School__c}</li>
+            <li style="font-size:15px;font-family:Open Sans, Arial;"><b>Data di inizio:</b>
+              <mj-raw>
+                <apex:outputtext value="{0,date,dd/MM/yyyy}">
+                  <apex:param value="{!opp.IEG_Course_starts__c}">
+                  </apex:param>
+                </apex:outputtext>
+              </mj-raw>
+            </li>
+            <li style="font-size:15px;font-family:Open Sans, Arial;"><b>Data di fine:</b>
+              <mj-raw>
+                <apex:outputtext value="{0,date,dd/MM/yyyy}">
+                  <apex:param value="{!opp.IEG_Course_ends__c}">
+                  </apex:param>
+                </apex:outputtext>
+              </mj-raw>
+            </li>
+            <li style="font-size:15px;font-family:Open Sans, Arial;"><b>Tipo di alloggio: </b> {!opp.IEG_Type_of_accomodation__c}</li>
+            <li style="font-size:15px;font-family:Open Sans, Arial;"><b>Data di arrivo:</b>
+              <mj-raw>
+                <apex:outputtext value="{0,date,dd/MM/yyyy}">
+                  <apex:param value="{!opp.IEG_Arrival_Date__c}"></apex:param>
+                </apex:outputtext>
+              </mj-raw>
+            </li>
+            <li style="font-size:15px;font-family:Open Sans, Arial;"><b>Data di partenza:</b>
+              <mj-raw>
+                <apex:outputtext value="{0,date,dd/MM/yyyy}">
+                  <apex:param value="{!opp.IEG_Exit_Date__c}"></apex:param>
+                </apex:outputtext>
+              </mj-raw>
+            </li>
+            <li style="font-size:15px;font-family:Open Sans, Arial;"><b>Informazioni aggiuntive: </b> {!opp.IEG_Extras__c}</li>
+          </ul>
+        </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" font-weight="700">DETTAGLI SU {!OPP.IEG_DESTINATION__C}</mj-text>
+
+        <mj-raw>
+          <apex:repeat value="{!escuelas}" var="escuela">
+        </mj-raw>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li><b>Indirizzo della scuola: </b> {!escuela.IEG_School_Address__c}</li>
+            <li><b>Link a Google Maps: </b> {!escuela.IEG_Link_address__c}</li>
+            <li><b>Numero di telefono: </b> {!escuela.IEG_Phone_school__c}</li>
+            <li><b>Contatto staff in loco: </b> {!escuela.IEG_school_contact__c}</li>
+            <li><b>Istruzioni per il tuo primo giorno:</b></li>
+            <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Per il tuo primo giorno di lezione, dovrai arrivare a {!escuela.IEG_Start_time__c}. Il nostro staff accademico e amministrativo ti starà aspettando e farai un test di livello di Spagnolo: in questo modo potremo assegnarti alla classe appropriata e darti gli orari di lezione. Ti presenteremo inoltre agli insegnanti e al Direttore Accademico della scuola. </mj-text>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Ti aspettiamo! ¡Hasta pronto! </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" line-height="20px">{!opp.IEG_Assigned_to_email__c}<br />T.: {!opp.IEG_Assigned_to_phone__c}<br /></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="11px" line-height="20px">
+          Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/enforex" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/enforex_schools/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/enforexschools/" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#004890" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enforex.com/images/crm/logo-footer-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

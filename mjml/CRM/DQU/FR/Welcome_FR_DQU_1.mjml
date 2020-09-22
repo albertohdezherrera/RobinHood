@@ -1,0 +1,40 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,700" />
+    
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="20px" color="#D2283D"><b>¡Hola!</b></mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px" >My name is Lola and I’d like to welcome you to don Quijote.</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px" >One of my colleagues will be contacting you shortly to help you design a Spanish course that’s perfect for you. You’ll be able to choose the type of program, duration, destination and type of accommodation that best suits your needs. We’ll be here to help you every step of the way.</mj-text>       
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px" >¡Hasta pronto!</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="20px" color="#D2283D" line-height="22px" font-weight="700">Lola Serrano</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="13px" line-height="20px" >infocentral@donquijote.org<br/>T.: (+34) 923 268 860<br/></mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="11px" line-height="20px">
+        Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+         <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/donQuijoteSchools" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/donquijote_school/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/donQuijoteschool" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#D2283D" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="http://static.donquijote.org/images/mail/CRM/dq-logo-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

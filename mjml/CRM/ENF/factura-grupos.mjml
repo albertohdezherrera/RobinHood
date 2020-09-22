@@ -1,0 +1,159 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Lato" href="https://fonts.googleapis.com/css?family=Lato:400,600,900" />
+  </mj-head>
+  <mj-body background-color="#f9f9f9" width="900px">
+    <mj-section background-color="#fff" >
+      <mj-column>
+        <mj-spacer height="10px" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" >
+      <mj-column>
+         <mj-image width="300px" src="https://fakeimg.pl/300x100/" align="right" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding-bottom="0">
+      <mj-column>
+        <mj-text font-family="Lato, Arial, sans-serif">
+          <h1 style="font-weight:900; text-transform: uppercase;font-size:42px; color:#42454A;font-family: Lato, Arial, sans-serif;">{!quote.Agencia__r.name}</h1>
+          <p style="font-size:15px;line-height:23px">Aquí me dijeron que querian meter un texto de intruccion</p>
+        </mj-text>
+      </mj-column> 
+    </mj-section>
+    <mj-raw>
+      <!--  APERTURA DE APEX FORM Y APEX REPEAT GENERAL -->
+    </mj-raw>
+
+    <mj-section background-color="#fff" padding="0" >
+      <mj-column>
+        <mj-text font-family="Lato, Arial, sans-serif" padding-bottom="0">
+          <h3 style="font-size:18px;color:#024691;text-transform:uppercase;font-weight:900;margin-bottom:4px">{!escuela}</h3>
+        </mj-text>
+        <mj-divider border-width="4px" border-style="solid" border-color="#024691" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" border-top="2px" padding-top="0">
+      <mj-column width="70%" >
+        <mj-table font-size="14px" font-family="Lato, Arial, sans-serif">
+          <tr>
+            <td style="border-bottom:1px solid #024691;text-align:left;padding: 10px 0;font-family: Lato, Arial, sans-serif;">{!s_Fechas}</td>
+            <td style="border-bottom:1px solid #024691;text-align:right;padding: 10px 0;font-family: Lato, Arial, sans-serif;">{!fechaEscuelas[escuela]}</td>
+          </tr>
+          <tr>
+            <td style="border-bottom:1px solid #024691;text-align:left;padding: 10px 0;font-family: Lato, Arial, sans-serif;">{!s_Duracion}</td>
+            <td style="border-bottom:1px solid #024691;text-align:right;padding: 10px 0;font-family: Lato, Arial, sans-serif;">{!duracionEscuelas[escuela]}</td>
+          </tr>
+          <tr>
+            <td style="border-bottom:1px solid #024691;text-align:left;padding: 10px 0;font-family: Lato, Arial, sans-serif;">{!s_NumEstudiantes}</td>
+            <td style="border-bottom:1px solid #024691;text-align:right;padding: 10px 0;font-family: Lato, Arial, sans-serif;">{!quote.Opportunity.IEG_Student_Number__c}</td>
+          </tr>
+        </mj-table>
+
+        
+        <mj-table font-size="15px" font-family="Lato, Arial, sans-serif">
+          <tr style="border-bottom:1px solid #024691;text-align:left;">
+            <td  colspan="2" style="font-family: Lato, Arial, sans-serif;">
+              {!s_serviciosIncluidos} 
+              <ul style="font-size: 13px">
+                <mj-raw>
+                  <!-- Bucle servicios incluidos -->
+                </mj-raw>
+                <li>condiones de los servicios</li>
+                <mj-raw>
+                  <!-- /Bucle servicios incluidos -->
+                </mj-raw>
+              </ul>
+            </td>
+          </tr>
+        </mj-table>
+        
+        <mj-table font-size="15px" font-family="Lato, Arial, sans-serif">
+          <tr style="text-align:left;">
+            <td  colspan="2" style="font-family: Lato, Arial, sans-serif;">
+              {!s_ActividadesIncluidas}
+              <ul style="font-size: 13px">
+                <mj-raw>
+                  <!-- Bucle activiades incluidos -->
+                </mj-raw>
+                <li>condiones de las actividades</li>
+                <mj-raw>
+                  <!-- /Bucle actividades incluidos -->
+                </mj-raw>
+              </ul>
+            </td>
+          </tr>
+        </mj-table>
+
+      </mj-column>
+      <mj-column width="30%">
+        <mj-text align="right">
+          <br/>
+          <b style="font-size:16px;color:#024691;font-weight:600;font-family: Lato, Arial, sans-serif;">{!s_precioPrograma}</b>
+          <br/>
+          <br/>
+          <span style="font-size:12px;">{!s_precioNeto}</span>
+          <b style="display:block;font-size:28px;display:block;margin-top:3px;color:#42454A;font-family: Lato, Arial, sans-serif;">{!precioProgramaEscuela[escuela]}</b>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" border-top="2px" padding-top="0">
+      <mj-column>
+        <mj-divider border-width="2px" border-style="solid" border-color="#024691" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" border-top="2px" padding-top="0">
+      <mj-column width="70%">
+        <mj-table font-size="15px" font-family="Lato, Arial, sans-serif">
+          <tr style="text-align:left;">
+            <td  colspan="2">
+              <span style="font-family: Lato, Arial, sans-serif;">{!s_Profesor} {!s_Profesores}</span>
+              <ul style="font-size: 13px">
+                <mj-raw>
+                  <!-- Bucle profesores incluidos -->
+                </mj-raw>
+                <li>condiones de los profesores</li>
+                <mj-raw>
+                  <!-- /Bucle profesores incluidos -->
+                </mj-raw>
+              </ul>
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+      <mj-column width="30%">
+        <mj-text align="right">
+          <br/>
+          <b style="font-size:16px;color:#024691;font-weight:600;font-family: Lato, Arial, sans-serif;">{!s_precioProfesor} </b>
+          <br/>
+          <br/>
+          <span style="font-size:12px;font-family: Lato, Arial, sans-serif;">{!s_PrecioPorProfesor} </span>
+          <b style="display:block;font-size:28px;display:block;margin-top:3px;color:#42454A;font-family: Lato, Arial, sans-serif;">{!precioProfesorEscuela[escuela]} </b>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section background-color="#fff" padding="0" >
+      <mj-column>
+        <mj-divider border-width="4px" border-style="solid" border-color="#024691" />
+      </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="#fff" border-top="2px">
+      <mj-column>
+        <mj-text>total de los precios</mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="right" line-height="35px">
+        <span style="font-size:18px;font-family: Lato, Arial, sans-serif;">{!s_precioTotal}</span><br/>
+        <b style="font-size:38px;color:#42454A;font-family: Lato, Arial, sans-serif;">{!quote.Opportunity.Amount} {!quote.Opportunity.CurrencyIsoCode}</b>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <!--  CIERRE DE APEX FORM2 -->
+      <!--  CIERRE DE APEX FORM -->
+    </mj-raw>
+  </mj-body>
+</mjml>

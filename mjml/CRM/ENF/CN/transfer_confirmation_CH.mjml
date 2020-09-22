@@ -1,0 +1,80 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" />
+
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890"><b>接送机服务确认单 </b></mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">亲爱的{!l_oppLine[0].IEG_Opportunity__r.Account.Name}:</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">请查看您的航班的信息，如果遗漏或不正确，请告诉我们。</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">请注意，在我们收到全额付款之前，我们不会提供此服务。</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">我们会根据以下细节接你:</mj-text>
+
+        达到日期
+        接机日期/时间
+        接机地点
+        航班/火车/大巴班次号码
+        出发城市
+        备注
+
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>达到日期:</b> </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>接机日期/时间:</b></li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>接机地点:</b></li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>航班/火车/大巴班次号码:</b>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>出发城市:</b>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>备注:</b> </li>
+          </ul>
+        </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">如果您需要进行任何更改，请查看您的旅行详细信息并立即通知我们。因为信息不正确，造成的无法准时接您的问题，我们对此不负责任，因此我们不会退款。请使用与您将要学习的城市相对应的紧急电话号码。</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">阅读这些信息并随身携带是非常重要的</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">接机服务到达</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">如果您有任何延迟或与您的抵达有任何其他问题，请通过学校的紧急电话号码联系您的班车服务负责人</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">如果您有任何的更改或取消（延迟抵达，航班详情更改，错过航班等）班车服务，请及时通知我们。 如果在抵达时我们没有得到任何更改信息，分配给您的司机将不会在规定的时间后等待超过一小时三十分钟。</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">离港出境服务说明</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">在您计划的最后一周，只要您预订了该项服务，我们的工作人员将在最后一天与您联系确认接机信息。 相同的紧急电话号码也同样适用于出发航班。</mj-text>
+
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890" line-height="22px" font-weight="700">{!opp.IEG_Useradmin__r.Name}</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" line-height="20px">{!opp.IEG_Useradmin__r.IEG_Email_DQU__c}<br />T.: {!opp.IEG_Useradmin__r.Phone}<br /></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="11px" line-height="20px">
+          Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/enforex" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/enforex_schools/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/enforexschools/" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#004890" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enforex.com/images/crm/logo-footer-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

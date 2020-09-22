@@ -1,0 +1,114 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" />
+
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890">Hola <span style="font-weight:700;">{!opp.Account.Name}</span></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Wij hopen dat je uitkijkt naar de start van je cursus bij Enforex! Het is nu tijd om het restantbedrag te betalen om zeker te zijn van een plek.
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Maak je betaling van {!opp.IEG_MiniPayment__c} {!opp.CurrencyIsoCode} compleet via:</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Onze beveiligde website met creditcard (wij accepteren Visa of Mastercard).</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Bankoverdracht (Graag een betaalbewijs van de transactie toesturen als je voor deze optie kiest). Om de transactie te kunnen afronden dien je het persoonlijke studentennummer te vermelden: {!opp.Student_Id__c} als referentie voor de transactie, samen met de volgende informatie:</mj-text>
+
+        <mj-raw>
+          <apex:outputPanel rendered="{!If(opp.IEG_Assigned_to__r.Division != 'UK', true, false)}">
+        </mj-raw>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Gebruikersnaam: </b> {!opp.IEG_Account_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Naam van je bank: </b> {!opp.IEG_bank_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Filiaaladres: </b> {!opp.IEG_Branch_address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Swift code: </b> {!opp.IEG_Swift_Code__c} </li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">EUR (€) account voor cursussen in Spanje en Cuba</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li><b>Account nr.:</b> {!opp.IEG_Account_No_Spain_Cuba__c}</li>
+            <li><b>IBAN:</b> {!OPP.IEG_IBAN_Spain_and_Cuba__c}</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">USD ($) account voor cursussen in Latijns-Amerika</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Account nr.: </b> {!opp.IEG_Account_No_Latin_America__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>IBAN:</b> {!opp.IEG_IBAN_Latin_America__c} </li>
+          </ul>
+        </mj-text>
+        <mj-raw>
+          </apex:outputPanel>
+          <apex:outputPanel rendered="{!If(opp.IEG_Assigned_to__r.Division = 'UK', true, false)}">
+        </mj-raw>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Gebruikersnaam: </b> {!opp.IEG_Account_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Naam van je bank: </b> {!opp.IEG_bank_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Filiaaladres:</b> {!opp.IEG_Branch_address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Swift code: </b> {!opp.IEG_Swift_Code__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Account nr.: </b> {!opp.IEG_Account_no_UK__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>IBAN:</b> {!opp.IEG_IBAN_UK__c} </li>
+          </ul>
+        </mj-text>
+        <mj-raw>
+          </apex:outputPanel>
+        </mj-raw>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px">Hierbij een korte samenvatting van wat je hebt gekozen:</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Naam van student: </b> {!opp.IEG_Student_Name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Cursus: </b> {!opp.IEG_Name_of_the_course__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Bestemming:</b> {!opp.IEG_Name_of_School__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Startdatum: </b>
+              <mj-raw>
+                <apex:outputtext value="{0,date,dd/MM/yyyy}">
+                  <apex:param value="{!opp.IEG_Course_starts__c}">
+                  </apex:param>
+                </apex:outputtext>
+              </mj-raw>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Einddatum: </b>
+              <mj-raw>
+                <apex:outputtext value="{0,date,dd/MM/yyyy}">
+                  <apex:param value="{!opp.IEG_Course_ends__c}">
+                  </apex:param>
+                </apex:outputtext>
+              </mj-raw>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Type accommodatie:</b> {!opp.IEG_Type_of_accomodation__c}</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Wij hebben je aanvraag voor een accommodatie ontvangen. Ik zo snel mogelijk contact met je opnemen om te bevestigen of je gekozen accommodatie beschikbaar is.</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Mocht je nog specifieke vragen hebben, dan help ik je graag verder.</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Wij kijken ernaar uit om je te ontmoeten in {!opp.IEG_Destination__c}!</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">¡Hasta pronto!</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Afdeling Academisch Advies</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" line-height="20px">{!opp.IEG_Assigned_to_email__c}<br />T.: {!opp.IEG_Assigned_to_phone__c}<br /></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="11px" line-height="20px">
+          Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/enforex" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/enforex_schools/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/enforexschools/" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#004890" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enforex.com/images/crm/logo-footer-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

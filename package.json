@@ -1,0 +1,25 @@
+{
+  "name": "ieg-mailing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uspeak/IEG-Mailing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mjml": "^4.4.1",
+    "plugin-error": "^1.0.1",
+    "replace-ext": "^1.0.0",
+    "through2": "^2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/uspeak/IEG-Mailing/issues"
+  },
+  "homepage": "https://github.com/uspeak/IEG-Mailing#readme"
+}

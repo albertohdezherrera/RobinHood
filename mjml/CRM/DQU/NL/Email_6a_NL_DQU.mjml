@@ -1,0 +1,85 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,700" />
+
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="20px" color="#D2283D">Hola <span style="font-weight:700;">{!opp.Account.Name},</span></mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">Je gaat al bijna van start met je cursus bij don Quijote! {! Opp.IEG_Destination__c} Wij kijken ernaar uit om je te ontmoeten!</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">Neem de laatste stap en maak je boeking definitief {!opp.IEG_Pending_To_Pay__c} {!opp.CurrencyIsoCode} via:</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">Onze beveiligde website met creditcard (wij accepteren Visa of Mastercard).</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">Bankoverdracht (Graag een betaalbewijs van de transactie toesturen als je voor deze optie kiest). Om de transactie te kunnen afronden dien je het persoonlijke studentennummer te vermelden: {!opp.Student_Id__c} als referentie voor de transactie, samen met de volgende informatie:</mj-text>
+        <mj-raw>
+          <apex:outputPanel rendered="{!If(opp.IEG_Assigned_to__r.Division != 'UK', true, false)}">
+        </mj-raw>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Gebruikersnaam:</b> {!opp.IEG_Account_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Naam van je bank:</b> {!opp.IEG_bank_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Filiaaladres:</b> {!opp.IEG_Branch_address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Swift</b> code: {!opp.IEG_Swift_Code__c}</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">EUR (€) account voor cursussen in Spanje en Cuba</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li>Account nr.: {!opp.IEG_Account_No_Spain_Cuba__c}</li>
+            <li>IBAN: {!OPP.IEG_IBAN_Spain_and_Cuba__c}</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">USD ($) account voor cursussen in Latijns-Amerika</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Account nr.:</b> {!opp.IEG_Account_No_Latin_America__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>IBAN:</b> {!opp.IEG_IBAN_Latin_America__c} </li>
+          </ul>
+        </mj-text>
+        <mj-raw>
+          </apex:outputPanel>
+          <apex:outputPanel rendered="{!If(opp.IEG_Assigned_to__r.Division = 'UK', true, false)}">
+        </mj-raw>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Gebruikersnaam:</b> {!opp.IEG_Account_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Naam van je bank:</b> {!opp.IEG_bank_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Filiaaladres </b> {!opp.IEG_Branch_address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Swift code: </b> {!opp.IEG_Swift_Code__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Account nr.: </b>{!opp.IEG_Account_no_UK__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>IBAN:</b> {!opp.IEG_IBAN_UK__c}</li>
+          </ul>
+        </mj-text>
+        <mj-raw>
+          </apex:outputPanel>
+        </mj-raw>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">Zorg ervoor dat je accommodatie op tijd is geboekt en dat je een visum hebt aangevraagd (indien van toepassing). Twijfel niet om contact met mij op te nemen indien je nog vragen of twijfels hebt, ik help je graag verder!</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">¡Hasta pronto!</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="20px" color="#D2283D" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Afdeling Academisch Advies</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="13px" line-height="20px">{!opp.IEG_Assigned_to_email__c}<br />T.: {!opp.IEG_Assigned_to_phone__c}<br /></mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="11px" line-height="20px">
+          Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/donQuijoteSchools" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/donquijote_school/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/donQuijoteschool" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#D2283D" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="http://static.donquijote.org/images/mail/CRM/dq-logo-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

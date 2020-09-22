@@ -1,0 +1,106 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" />
+    
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890">Hola <span style="font-weight:700;">{!opp.Account.Name}</span></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >ご連絡を取らせていただいてきましたが、お返事いただけていないようです。</mj-text>
+         <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >コースのご予約がまだお済みでないようなので、予約を確定するため、お早めに手続きを再開されることをお勧め致します。</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >予約を終了するための手続きはこちらです： <a href="{!opp.IEG_Link_enrollment_form__c}" style="color:#004890;">{link nuevo}</a></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >こちらの金額を次のいずれかの方法でお支払いください：</mj-text>
+       
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px" >
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;">こちらの金額を次のいずれかの方法でお支払いください：</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;">銀行送金（お手続き後、ご送金明細をメールでお送りください。）銀行送金を完了するには学生ＩＤと、</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >以下の情報を記入してください。</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px" >
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>口座名</b> {!opp.IEG_Account_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>銀行名</b> {!opp.IEG_bank_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>支店</b> {!opp.IEG_Branch_address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>スウィフトコード</b> {!opp.IEG_Swift_Code__c}</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700" >ユーロ口座（キューバとスペイン）</mj-text> 
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px" >
+          <ul style="margin: 0;padding:0 30px">
+            <li><b>口座番号</b> {!opp.IEG_Account_No_Spain_Cuba__c}</li>
+            <li><b>ＩＢＡＮ</b> {!OPP.IEG_IBAN_Spain_and_Cuba__c}</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700" >米ドル口座（中南米）</mj-text> 
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px" >
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>口座番号</b>  {!opp.IEG_Account_No_Latin_America__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>ＩＢＡＮ</b> {!opp.IEG_IBAN_Latin_America__c}</li>
+          </ul>
+        </mj-text>
+        <mj-raw>
+          </apex:outputPanel>
+          <apex:outputPanel rendered="{!If(opp.IEG_Assigned_to__r.Division = 'UK', true, false)}">
+        </mj-raw>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px" >
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>口座名</b> {!opp.IEG_Account_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>銀行名</b> {!opp.IEG_bank_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>支店住所</b> {!opp.IEG_Branch_address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>スウィフトコード</b> {!opp.IEG_Swift_Code__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>口座番号</b> {!opp.IEG_Account_no_UK__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>ＩＢＡＮ</b> {!opp.IEG_IBAN_UK__c}</li>
+          </ul>
+        </mj-text>
+        <mj-raw>
+          </apex:outputPanel>
+        </mj-raw>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700" >こちらが選択なさったコースの詳細です：</mj-text> 
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px" >
+          <ul style="margin: 0;padding:0 30px">
+            <li><b>お名前 </b> {!opp.IEG_Student_Name__c}</li>
+            <li><b>コース</b> {!opp.IEG_Name_of_the_course__c}</li>
+            <li><b>目的地</b> {!opp.IEG_Name_of_School__c}</li>
+            <li><b>開始日</b> <apex:outputText value="{0,date,dd/MM/yyyy}">
+              <apex:param value="{!opp.IEG_Course_starts__c}" />
+              </apex:outputText></li>
+            <li><b>終了日</b> <apex:outputText value="{0,date,dd/MM/yyyy}">
+              <apex:param value="{!opp.IEG_Course_ends__c}" />
+              </apex:outputText></li>
+            <li><b>滞在先の種類</b> {!opp.IEG_Type_of_accomodation__c}</li>        
+          </ul>
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >何か不明点や特別な質問がありましたら、いつでもお気軽にご連絡ください。</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >ご連絡をお待ちしています！</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">アカデミック・アドバイス部</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" line-height="20px" >{!opp.IEG_Assigned_to_email__c}<br/>T.: {!opp.IEG_Assigned_to_phone__c}<br/></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="11px" line-height="20px">
+        Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+         <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/enforex" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/enforex_schools/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/enforexschools/" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#004890" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enforex.com/images/crm/logo-footer-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

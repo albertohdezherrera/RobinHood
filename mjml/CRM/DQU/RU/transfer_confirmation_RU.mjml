@@ -1,0 +1,72 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,700" />
+
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="20px" color="#D2283D"><b>ПОДТВЕРЖДЕНИЕ ТРАНСФЕРА </b></mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">Уважаемый(-ая) {!l_oppLine[0].IEG_Opportunity__r.Account.Name},</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">Пожалуйста, ознакомьтесь с информацией о своих рейсах и сообщите нам, если отсутствует или неверно указана информация.</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">Обратите внимание, что пока мы не получим полную оплату, эта услуга не вступит в силу.</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">ОМы встретим вас, учитывая следующие данные:</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Дата прибытия:</b> </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>День и время встречи:</b></li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Место встречи:</b></li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Номер авиарейса / поезда / автобуса:</b>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Город отправления:</b>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Комментарии:</b> </li>
+          </ul>
+        </mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">Проверьте данные о поездке и сообщите нам, если вам необходимо внести какие-либо изменения. Мы не несем ответственности за невыполнение услуги трансфера из-за неправильной информации, поэтому мы не будем осуществлять возврат средств. Если вам нужно связаться с нами по прибытии, используйте номер службы экстренной связи, соответствующий городу, в котором вы собираетесь учиться.</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">Очень важно, чтобы вы прочитали информацию и взяли ее с собой:</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">ИНСТРУКЦИИ О ТРАНСФЕРЕ С ПРИБЫТИЕМ В {!l_oppline[0].IEG_Product_Catalog__r.IEG_School__r.IEG_Province__c}</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">В случае задержки или возникновения других проблем, связанных с вашим прибытием, пожалуйста, свяжитесь с лицом, ответственным за ваш трансфер по номеру службы экстренной связи в школе :{!l_oppline[0].IEG_Product_Catalog__r.IEG_School__r.IEG_Emergency_phone__c}</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">Изменения, которые влияют на услугу трансфера (поздний приезд, изменения данных рейса, пропущенные рейсы и т. д.), должны быть переданы для отмены или отсрочки сервиса. Если изменения не были внесены в данные о прибытии, назначенный вам водитель не будет ждать вас более одного часа и тридцать минут после установленного времени.</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">ИНСТРУКЦИИ О ТРАНСФЕРЕ С ВЫЕЗДОМ ИЗ {!l_oppline[0].IEG_Product_Catalog__r.IEG_School__r.IEG_Province__c}</mj-text>
+
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px">В течении последней недели вашей программы, с вами свяжется сотрудник нашей компании и сообщит вам время, в которое вас заберут в последний день вашего пребывания, если вы забронировали эту услугу. Тот же номер телефона для экстренной связи действителен для вылетающих рейсов.</mj-text>
+
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="20px" color="#D2283D" line-height="22px" font-weight="700">{!opp.IEG_Useradmin__r.Name}</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="13px" line-height="20px">{!opp.IEG_Useradmin__r.IEG_Email_DQU__c}<br />T.: {!opp.IEG_Useradmin__r.Phone}<br /></mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="11px" line-height="20px">
+          Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/donQuijoteSchools" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/donquijote_school/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/donQuijoteschool" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#D2283D" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="http://static.donquijote.org/images/mail/CRM/dq-logo-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

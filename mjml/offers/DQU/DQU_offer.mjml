@@ -1,0 +1,119 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" />
+  </mj-head>
+  <mj-body width="700px" background-color="#F9F9F9">
+    <mj-raw>
+    <!-- LOGO DE EMAIL -->
+    </mj-raw>
+    <mj-section background-color="#F9F9F9">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff">
+      <mj-column>
+        <mj-image align="left" width="180px" src="http://static.donquijote.org/images/email/logo-dq.jpg"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /LOGO DE EMAIL -->
+    </mj-raw>
+    <mj-raw>
+    <!-- TITULO DE EMAIL -->
+    </mj-raw>
+    <mj-section background-color="#fff" padding="0" padding-top="30px" >
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="28px" line-height="35px" align="center">
+          <span style="color: #BABABA; font-weigth:300;">Begin your <b style="display:block;color:#D2283D">learning voyage in Spanish</b></span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /TITULO DE EMAIL -->
+    </mj-raw>
+    <mj-raw>
+    <!-- FOTO DE OFERTA -->
+    </mj-raw>
+     <mj-section background-color="#fff">
+      <mj-column>
+        <mj-image src="https://fakeimg.pl/700x300/" />
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /FOTO DE OFERTA -->
+    </mj-raw>
+    <mj-raw>
+    <!-- TITULO DE OFERTA -->
+    </mj-raw>
+    <mj-section background-color="#fff" padding="30px" padding-bottom="0">
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="15px" color="#383838" >
+          <h2 style="margin:0">Learning voyage in Spanish</h2>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /TITULO DE OFERTA -->
+    </mj-raw>
+    <mj-raw>
+    <!-- TEXTO DE OFERTA -->
+    </mj-raw>
+    <mj-section background-color="#fff" padding="30px" padding-top="0">
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="15px" line-height="28px" color="#383838">
+          <p>Spain, Mexico, Argentina, Costa Rica…where would you like to learn Spanish?<br/><br/>don Quijote offers immersive language experiences in 30 schools across 13 countries: a great mix of learning, traveling, and getting to know your chosen destination. The hardest part is deciding where to go!  <br/><br/>Take advantage of our special offer and get a <b>20% discount</b> on your Spanish course, but only for a limited time! <br/><br/>Don't wait — it’s time to put your finger on a spinning globe and find a place to begin your language journey.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /TEXTO DE OFERTA -->
+    </mj-raw>
+    <mj-raw>
+    <!-- BOTON DE OFERTA -->
+    </mj-raw>
+    <mj-section background-color="#fff" padding="30px" padding-top="0">
+      <mj-column>
+            <mj-button font-family="Montserrat, Arial" background-color="#D2283D" color="white" border-radius="50px" inner-padding="18px 25px" href="https://www.donquijote.org/">
+            <span style="font-weight:700;text-transform:uppercase;font-size:12px">More information</span>
+         </mj-button>
+      </mj-column>
+      <mj-column>
+        <mj-button font-family="Montserrat, Arial" background-color="#D2283D" color="white" border-radius="50px" inner-padding="18px 25px" href="https://www.donquijote.org/">
+        <span style="font-weight:700;text-transform:uppercase;font-size:12px">More information2</span>
+      </mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /BOTON DE OFERTA -->
+    </mj-raw>
+    <mj-raw>
+    <!-- BOTON DE OFERTA -->
+    </mj-raw>
+    <mj-section background-color="#fff" padding="30px" padding-top="40px" padding-bottom="10px">
+      <mj-column>
+      <mj-divider border-width="1px" border-style="solid" border-color="#D8D8D8" />
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /BOTON DE OFERTA -->
+    </mj-raw>
+    <mj-raw>
+    <!-- BOTON DE OFERTA -->
+    </mj-raw>
+    <mj-section background-color="#fff" padding="30px" padding-top="0">
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="11px" line-height="17px" color="#B0B0B0" >
+          <p>Please do not reply to this email. If you want to contact donquijote.org use our <a href="http://www.donquijote.org/en/contact-us" style="color:#666; text-decoration:underline;">contact form</a><br>
+            Copyright %%=Format(Now(),YYYY")=%% donQuijote | <a href="http://www.donquijote.org/en/privacy-policy" style="color: #666; text-decoration: underline;">Privacy Policies</a> | <a href="https://lps.donquijote.org/gdpr/en/?marca=DQU&email=%%EmailAddr%%" style="color: #666; text-decoration: underline;">Unsubscribe</a><br></p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /BOTON DE OFERTA -->
+    </mj-raw>
+    <mj-section background-color="#F9F9F9">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

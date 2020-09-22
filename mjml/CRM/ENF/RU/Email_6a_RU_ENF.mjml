@@ -1,0 +1,86 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" />
+
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890" line-height="28px">Если у вас остались какие-либо вопросы по поводу вашего предстоящего курса, пожалуйста, свяжитесь с нами.</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Кроме того, мы хотели бы напомнить вам, что общая сумма должна быть оплачена не менее чем за 4 недели до вашего приезда.</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Вы можете совершить платеж {! Opp.IEG_Pending_To_Pay__c} {! Opp.CurrencyIsoCode} через:</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Нашу безопасную платежную онлайн платформу с помощью кредитной карты (мы принимаем Visa или Mastercard).</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Банковский перевод (пожалуйста, пришлите нам копию подтверждения оплаты, если вы выберете этот вариант). Чтобы завершить банковский перевод, вам необходимо указать свой идентификатор студента: {! Opp.Student_Id__c} в качестве ссылки для банковского перевода, а также следующую информацию: </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Account Name: </b></a> {!opp.IEG_Account_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Bank Name: </b>{!opp.IEG_bank_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Branch address: </b>{!opp.IEG_Branch_address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Swift code: </b>{!opp.IEG_Swift_Code__c}</li>
+          </ul>
+        </mj-text>
+
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">EUR (€) account for courses in Spain and Cuba:</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li><b>Account no.:</b> {!opp.IEG_Account_No_Spain_Cuba__c}</li>
+            <li><b>IBAN:</b> {!OPP.IEG_IBAN_Spain_and_Cuba__c}</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">USD ($) account for courses in Latin America</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Account no.:</b> {!opp.IEG_Account_No_Spain_Cuba__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>IBAN:</b> {!OPP.IEG_IBAN_Spain_and_Cuba__c}</li>
+          </ul>
+        </mj-text>
+        <mj-raw>
+          </apex:outputPanel>
+          <apex:outputPanel rendered="{!If(opp.IEG_Assigned_to__r.Division = 'UK', true, false)}">
+        </mj-raw>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Account no.:</b> {!opp.IEG_Account_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Bank Name:</b> {!opp.IEG_bank_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Branch address:</b> {!opp.IEG_Branch_address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Swift code: </b> {!opp.IEG_Swift_Code__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Account No: </b> {!opp.IEG_Account_no_UK__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>IBAN:</b> {!opp.IEG_IBAN_UK__c}</li>
+
+          </ul>
+        </mj-text>
+        <mj-raw>
+          </apex:outputPanel>
+        </mj-raw>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Если вы еще этого не сделали, свяжитесь, пожалуйста, с нами, чтобы добавить ваше жилье и, если необходимо, позаботьтесь о ваших визовых требованиях. И, конечно же, не стесняйтесь обращаться к нам, если вам нужна помощь или поддержка.</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">¡Hasta pronto!</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Saludos</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" line-height="20px">{!opp.IEG_Assigned_to_email__c}<br />T.: {!opp.IEG_Assigned_to_phone__c}<br /></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="11px" line-height="20px">
+          Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/enforex" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/enforex_schools/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/enforexschools/" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#004890" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enforex.com/images/crm/logo-footer-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

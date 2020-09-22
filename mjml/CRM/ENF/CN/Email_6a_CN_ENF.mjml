@@ -1,0 +1,84 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" />
+
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="15px" color="#004890" line-height="22px">您的课程即将到来，在此之前我们希望能够解答您的任何问题。并且希望提醒您，汇款要在您到达前4个月完成。</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">你可以通过以下{!opp.IEG_Pending_To_Pay__c}{!opp.CurrencyIsoCode}两种途径汇款</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;">信用卡网上安全付款平台（我们接受Visa或MasterCard）</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;">银行汇款（请在汇款完成后将汇款单复印件发送给我们）。您需要在备注里写上您的学号 {!opp.Student_Id__c}以完成汇款</li>
+          </ul>
+        </mj-text>
+        <mj-raw>
+          <apex:outputPanel rendered="{!If(opp.IEG_Assigned_to__r.Division != 'UK', true, false)}">
+        </mj-raw>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>账户名称:</b> {!opp.IEG_Account_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>银行名称:</b> {!opp.IEG_bank_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>银行地址:</b> {!opp.IEG_Branch_address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Swift码:</b> {!opp.IEG_Swift_Code__c}</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">在西班牙和古巴请汇欧元(€)</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li><b>账户号码： </b>{!opp.IEG_Account_No_Spain_Cuba__c}</li>
+            <li><b>IBAN:</b> {!OPP.IEG_IBAN_Spain_and_Cuba__c}</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">拉丁美洲课程请汇美金($)</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>账户号码：</b> {!opp.IEG_Account_No_Latin_America__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>IBAN:</b> {!opp.IEG_Account_No_Latin_America__c}</li>
+          </ul>
+        </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>账户名称： </b> {!opp.IEG_Account_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>银行名称： </b> {!opp.IEG_bank_name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>银行地址:</b> {!opp.IEG_Branch_address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Swift码:</b> {!opp.IEG_Swift_Code__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>账户号码:</b> {!opp.IEG_Account_no_UK__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>IBAN:</b> {!opp.IEG_IBAN_UK__c}</li>
+          </ul>
+        </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">如果您还没有准备好，如果有需要，请联系我们为您预订住宿，提供您申请签证所需的文件。当然如果您有其他的疑问和需要也可以随时与我联系！</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">再会~</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">祝好~ </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" line-height="20px">{!opp.IEG_Assigned_to_email__c}<br />T.: {!opp.IEG_Assigned_to_phone__c}<br /></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="11px" line-height="20px">
+          Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/enforex" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/enforex_schools/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/enforexschools/" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#004890" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enforex.com/images/crm/logo-footer-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

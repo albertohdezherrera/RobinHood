@@ -1,0 +1,80 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" />
+
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890"><b>送迎サービス確認書</b></mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">{!l_oppLine[0].IEG_Opportunity__r.Account.Name}　様,</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">以下の便名情報をご確認の上、訂正箇所などがございましたらお知らせくださいませ。なお、事前にお支払い頂くまではこちらのサービスはご提供できませんので、ご了承ください.
+        </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">送迎の詳細はこちらです：</mj-text>
+
+        ご到着日
+        送迎日時
+        送迎場所
+        飛行気/電車/バス便名
+        ご出発地
+        備考欄
+
+
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>ご到着日:</b> </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>送迎日時:</b></li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>送迎場所:</b></li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>飛行気/電車/バス便名:</b>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>ご出発地:</b>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>備考欄:</b> </li>
+          </ul>
+        </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">旅程内容に変更等がございましたら早急にご連絡いただくようお願い致します。ご提供頂いた情報に誤りがあり、お迎えに上がれなかった場合、返金は致しかねますのでどうぞご了承ください。万が一ドライバーと出会えなかった場合は、緊急番号までおかけください。</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">こちらの情報をご一読頂き、ご持参ください:</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">{!l_oppline[0].IEG_Product_Catalog__r.IEG_School__r.IEG_Province__c}での送迎サービス（ご到着）の流れ</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">遅延等の問題があった場合は学校の緊急先: {!l_oppline[0].IEG_Product_Catalog__r.IEG_School__r.IEG_Emergency_phone__c}までご連絡ください。</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">ご到着の変更（遅延、旅程変更、飛行機を逃した等）は、送迎サービスのキャンセルまたは延期の手続きをさせて頂くため、必ずお知らせください。これらの変更をお知らせいただけなかった場合、ドライバーは最高一時間半までお待ち致します。</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">{!l_oppline[0].IEG_Product_Catalog__r.IEG_School__r.IEG_Province__c}での送迎サービス（出発）の流れ</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">復路のサービスをお申し込みの場合、コースの最終週に学校のスタッフがお迎えの時間をお知らせ致します。何かあった場合の緊急先は、上記のものと同等です。</mj-text>
+
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890" line-height="22px" font-weight="700">{!opp.IEG_Useradmin__r.Name}</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" line-height="20px">{!opp.IEG_Useradmin__r.IEG_Email_DQU__c}<br />T.: {!opp.IEG_Useradmin__r.Phone}<br /></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="11px" line-height="20px">
+          Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/enforex" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/enforex_schools/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/enforexschools/" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#004890" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enforex.com/images/crm/logo-footer-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

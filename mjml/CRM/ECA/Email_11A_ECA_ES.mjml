@@ -1,0 +1,42 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Lato" href="https://fonts.googleapis.com/css?family=Lato:400,700" />
+    <mj-all font-family="Lato, Arial" />
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="20px" color="#E59226">¡Ya queda muy poco para comenzar el campamento!</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Nos dirigimos una vez más, para informarle que la salida del autobús se realizará a las 10.30 horas del domingo (fecha inicio del programa), desde el aparcamiento del Parque Juan Carlos I en el Campo de las Naciones, Glorieta S.A.R Don Juan de Borbón y Battemberg, 5 (próximo al IFEMA).  En el siguiente enlace (enlace con mapa web), encontrará un pequeño mapa orientativo.</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Recomendamos, estar entre las 10.00 y 10.15 horas para que el autobús salga a la hora prevista, así como preparar una bebida y un bocadillo. También tendrán la posibilidad de comprar algún snack en las estaciones de servicio donde se realizarán las paradas durante el viaje. </mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >En caso de emergencia el día de la salida podrán contactar con nosotros en el teléfono 609 640 512.</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Un saludo.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="20px" color="#E59226" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="13px" line-height="20px" >{!opp.IEG_Assigned_to_email__c}<br/>T.: {!opp.IEG_Assigned_to_phone__c}<br/></mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="11px" line-height="20px">
+        Calle Gustavo Fernánde Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+         <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/donQuijoteSchools" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/donquijote_school/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/donQuijoteschool" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#61BB46" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enfocamp.com/images/assets/enfocamp-white.svg" />
+      </mj-column>
+      /images
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

@@ -1,0 +1,112 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,700" />
+    
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="20px" color="#D2283D">Hola <span style="font-weight:700;">{!opp.Account.Name}</span></mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px" >Thank you for completing your payment. We are pleased to welcome you to our don Quijote community.</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px" >You are now enrolled in the following don Quijote Spanish course:</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="14px" line-height="22px" >
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Student name:</b>  {!opp.IEG_Student_Name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Course:</b> {!opp.IEG_Name_of_the_course__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Destination:</b> {!opp.IEG_Name_of_School__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Start date:</b> 
+            <mj-raw>
+            <apex:outputtext value="{0,date,dd/MM/yyyy}">
+            <apex:param value="{!opp.IEG_Course_starts__c}">
+            </apex:param></apex:outputtext>
+            </mj-raw>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>End date:</b> 
+            <mj-raw>
+            <apex:outputtext value="{0,date,dd/MM/yyyy}">
+            <apex:param value="{!opp.IEG_Course_ends__c}">
+            </apex:param></apex:outputtext>
+            </mj-raw>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Type of accommodations:</b> {!opp.IEG_Type_of_accomodation__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Arrival date:</b> 
+            <mj-raw>
+              <apex:outputtext value="{0,date,dd/MM/yyyy}">
+                  <apex:param value="{!opp.IEG_Arrival_Date__c}"></apex:param>
+              </apex:outputtext>
+            </mj-raw>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Departure date:</b> 
+            <mj-raw>
+              <apex:outputtext value="{0,date,dd/MM/yyyy}">
+                <apex:param value="{!opp.IEG_Exit_Date__c}"></apex:param>
+              </apex:outputtext>
+            </mj-raw>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Additional notes:</b>  {!opp.IEG_Extras__c}</li>
+          </ul>
+        </mj-text>
+        <mj-raw>
+          <apex:outputPanel rendered="{!AND(opp.IEG_Transfer_Contratado__c=TRUE, opp.IEG_checkPickUp__c=FALSE)}"> 
+        </mj-raw>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px" >If you have booked our pick-up service at the airport and have not yet provided your arrival information, or need to make a change, you can do so through this <a href="{!opp.IEG_Link_Datos_recogida__c}" style="color:#d2283d;">link</a>. If you have not yet contracted this service and wish to do so, you can contact us <a href="mailto:{!opp.IEG_Useradmin__r.Email}" style="color:#d2283d;">here</a>.</mj-text>
+        <mj-raw>
+          </apex:outputPanel>
+          <apex:outputPanel rendered="{!AND(opp.IEG_Adult__c=FALSE,opp.IEG_Parental_authorization__c=FALSE)}">
+        </mj-raw>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px" >In order to place you in the most appropriate class we need to have an estimated idea of your Spanish level. You will find a level test at the following link. Please complete and submit it at your earliest convenience.</mj-text>
+        <mj-raw>
+          </apex:outputPanel>
+		      <apex:outputPanel rendered="{!AND(opp.IEG_Transfer_Contratado__c=TRUE, opp.IEG_checkPickUp__c=FALSE)}"> 
+        </mj-raw>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px" >Si eres menor de edad, es esencial que nos envíes lo antes posible la Autorización para Menores adjunta firmada por tu padre, madre o tutor.</mj-text>
+        <mj-raw>
+          </apex:outputPanel>
+        </mj-raw>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700" >Details for {!opp.IEG_Destination__c}</mj-text> 
+        <mj-raw>
+          <apex:repeat value="{!escuelas}" var="escuela"> 
+        </mj-raw>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="14px" line-height="22px" >
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Address:</b>  {!escuela.IEG_School_Address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Link to Google Maps:</b> {!escuela.IEG_Link_address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Phone number:</b> {!opp.IEG_Name_of_School__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Administration staff at the center:</b> {!escuela.IEG_school_contact__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>	Instructions for your first day:</b> {!escuela.IEG_school_contact__c}</li>
+          </ul>
+        </mj-text>
+        <mj-raw>
+          </apex:repeat>
+        </mj-raw>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px" >Please let us know if you have any questions about your school or destination. We will be more than happy to help and you can always count on us to guide you through the first days.</mj-text>
+        
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="15px" line-height="22px" >¡Hasta pronto!</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Montserrat, Arial" font-size="20px" color="#D2283D" line-height="22px" font-weight="700">{!opp.IEG_Useradmin__r.Name}</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="13px" line-height="20px" >{!opp.IEG_Useradmin__r.Email}<br/>T.: {!opp.IEG_Useradmin__r.Phone}<br/></mj-text>
+        <mj-text font-family="Montserrat, Arial" color="#444" font-size="11px" line-height="20px">
+        Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+         <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/donQuijoteSchools" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/donquijote_school/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/donQuijoteschool" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#D2283D" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="http://static.donquijote.org/images/mail/CRM/dq-logo-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

@@ -1,0 +1,58 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Lato" href="https://fonts.googleapis.com/css?family=Lato:400,700" />
+    <mj-all font-family="Lato, Arial" />
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="20px" color="#E59226">Hola<span style="font-weight:700;">{!opp.Account.Name}</span></mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Desde Enforex Camps, le confirmamos que el pago realizado para la reserva del programa de (nombre del alumno), ha sido recibido. </mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Estos son los detalles de la reserva:
+        </mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="14px" line-height="22px" >
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Nombre del estudiante: </b>{! Opp.IEG_Student_Name__c}</li>
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Programa: </b>{! Opp.IEG_Name_of_the_course__c}</li>
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Destino:</b> {! Opp.IEG_Name_of_School__c}</li>
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Fecha de inicio:</b></li>
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Fecha final:</b></li>
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Fecha de salida:</b></li>                         
+            <li style="font-size:14px;font-family:Lato, Arial;"><b>Notas adicionales: </b>{! Opp.IEG_Extras__c}</li>
+          </ul>
+        </mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Si ha reservado nuestro servicio de recogida en el aeropuerto y aún no ha proporcionado la información de su llegada, o necesita hacer un cambio, puede hacerlo a través de este enlace. </mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" > Si aún no ha contratado este servicio y desea hacerlo todavía se encuentra a tiempo de solicitarlo.</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Para poder ubicar al alumno en la clase más adecuada, necesitamos tener una idea aproximada de su nivel de inglés. Encontrará una prueba de nivel en el siguiente enlace. Por favor el alumno debe de complentarla y enviarla lo antes posible. <a href="#" style="color:#61BB46;font-weight:400;"><b>ENLACE PRUEBA DE NIVEL</b></a></mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >En el caso de que deseen que (nombre del alumno), pueda tener acceso al permiso de salida sin supervisión (¡recuerde! disponible para alumnos de 15 años en adelante), es esencial que nos lo envíe lo antes posible Autorización para menores adjunta firmada por padre, madre o tutor <a href="#" style="color:#61BB46;font-weight:400;"><b>ENLACE DOCUMENTO</b></a></mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >Nos pondremos en contacto más adelante para proporcionarle una guía del alumno con información específica del campamento y el programa elegido.</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="15px" line-height="22px" >¡Ya queda muy poco para comenzar!</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="20px" color="#E59226" line-height="22px" font-weight="700">{!opp.IEG_Assigned_to_name__c}</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="13px" line-height="20px" >{!opp.IEG_Assigned_to_email__c}<br/>T.: {!opp.IEG_Assigned_to_phone__c}<br/></mj-text>
+        <mj-text font-family="Lato, Arial" color="#444" font-size="11px" line-height="20px">
+        Calle Gustavo Fernánde Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+         <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/donQuijoteSchools" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/donquijote_school/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/donQuijoteschool" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#61BB46" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enfocamp.com/images/assets/enfocamp-white.svg" />
+      </mj-column>
+      /images
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

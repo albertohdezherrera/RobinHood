@@ -1,0 +1,88 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" />
+    
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px" >
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>学生姓名:</b>   {!opp.IEG_Student_Name__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>课程:</b> {!opp.IEG_Name_of_the_course__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>地点:</b> {!opp.IEG_Name_of_School__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>开始时间:</b> 
+              <mj-raw>
+                <apex:outputtext value="{0,date,dd/MM/yyyy}">
+                  <apex:param value="{!opp.IEG_Course_starts__c}">
+                </apex:param></apex:outputtext>
+              </mj-raw>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>结束时间:</b> 
+              <mj-raw>
+                <apex:outputtext value="{0,date,dd/MM/yyyy}">
+                  <apex:param value="{!opp.IEG_Course_ends__c}">
+                </apex:param></apex:outputtext>
+              </mj-raw>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>住宿类型:</b> {!opp.IEG_Type_of_accomodation__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>入住时间:</b> {!opp.IEG_Arrival_Date__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>退房时间:</b> {!opp.IEG_Exit_Date__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>备注:</b>  {!opp.IEG_Extras__c}</li>
+          </ul>
+        </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700" >细节{!OPP.IEG_DESTINATION__C}</mj-text> 
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px" >
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>学校地址:</b>   {!escuela.IEG_School_Address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>地图链接:</b> {!escuela.IEG_Link_address__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>学校电话:</b>  {!escuela.IEG_Phone_school__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>学校管理人员:</b> {!escuela.IEG_school_contact__c}</li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>第一天报道细节:</b></li>
+            <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >第一天上课，您需要在{!escuela.IEG_Start_time__c}点到校参加分班考试。</mj-text>
+          </ul>
+        </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" ><b>请您在这个</b> <a href="{!linkEscuela}" style="color:#004890;">链接</a>. 中下载欢迎信，里面有非常有用的信息</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700" >住宿细节</mj-text> 
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >我们已经包含了您的住宿详情。 根据以下链接了解详情。</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >有关您入住的其他重要详情，请阅读住宿规则。 您可以通过单击此链接找到它。 即使您没有预订此服务，也请告知我们您的抵达时间</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >如果您有任何问题或疑虑，请随时 <a href="mailto:{!opp.IEG_Useradmin__r.IEG_Email_DQU__c}" style="color:#004890;">与我们联系。 </a>我们很乐意提供帮助。</mj-text>
+        
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >再会~</mj-text>
+
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px" >祝安~</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890" line-height="22px" font-weight="700">{!opp.IEG_Useradmin__r.Name}</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" line-height="20px" >{!opp.IEG_Useradmin__r.IEG_Email_DQU__c}<br/>T.: {!opp.IEG_Useradmin__r.Phone}<br/></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="11px" line-height="20px">
+        Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+         <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/enforex" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/enforex_schools/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/enforexschools/" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#004890" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enforex.com/images/crm/logo-footer-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

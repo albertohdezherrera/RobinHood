@@ -1,0 +1,72 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" />
+
+  </mj-head>
+  <mj-body background-color="#fff" width="900px">
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890"><b>CONFIRMAÇÃO DE SERVIÇO DE TRANSFER</b></mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Prezado {!l_oppLine[0].IEG_Opportunity__r.Account.Name},</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Por favor, confira abaixo a informação que temos sobre seu voo de chegada/partida e nos informe sobre qualquer correção ou alteração necessária. Por favor, note que enquanto não tivermos o valor total do pagamento concluído, este serviço não estará confirmado. </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Nós te buscaremos de acordo com as seguintes informações:</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="14px" line-height="22px">
+          <ul style="margin: 0;padding:0 30px">
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Dia de chegada:</b> </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Data e hora do encontro:</b></li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Local do encontro:</b></li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Número do Voo/ônibus/trem:</b>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Cidade de origem:</b>
+            </li>
+            <li style="font-size:14px;font-family:Montserrat, Arial;"><b>Comentários:</b> </li>
+          </ul>
+        </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Por favor, reveja os detalhes da sua viagem e informe-nos imediatamente se tiver que fazer alguma alteração. Não nos responsabilizamos pela não conformidade do serviço de transporte devido a informações incorretas, por isso não ofereceremos reembolso. Se você precisar entrar em contato conosco na sua chegada, por favor, use o número de emergência correspondente à cidade em que você vai estudar.</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">É muito importante que você leia as informações e traga-as com você. </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">SHUTTLE INSTRUÇÕES DE TRANSFER PARA CHEGADA {!l_oppline[0].IEG_Product_Catalog__r.IEG_School__r.IEG_Province__c}</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Em caso de atraso ou se você tiver outros problemas relacionados à sua chegada, entre em contato com a pessoa responsável pelo serviço de transporte no número de emergência da escola: </mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">{! L_oppline [0] .IEG_Product_Catalog__r.IEG_School__r.IEG_Emergency_phone__c}</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">As alterações que afetam o serviço de transporte (chegada tardia, alterações nos detalhes do voo, voos perdidos, etc.) devem ser comunicadas para cancelar ou adiar o serviço. Se nenhuma alteração tiver sido notificada no momento da chegada, o motorista designado para você não esperará mais de uma hora e trinta minutos após o horário estabelecido.</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="16px" line-height="22px" font-weight="700">INSTRUÇÕES PARA O TRANSFER DE PARTIDA {!l_oppline[0].IEG_Product_Catalog__r.IEG_School__r.IEG_Province__c}</mj-text>
+
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="15px" line-height="22px">Durante a última semana do seu programa, um membro da nossa equipe entrará em contato com você e lhe informará a hora em que você será pego no último dia da sua estadia, desde que você tenha reservado este serviço. O mesmo número de telefone de emergência é válido para voos de partida.</mj-text>
+
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text font-family="Open Sans, Arial" font-size="20px" color="#004890" line-height="22px" font-weight="700">{!opp.IEG_Useradmin__r.Name}</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" font-weight="300" font-style="italic">Academic Advising Department</mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="13px" line-height="20px">{!opp.IEG_Useradmin__r.IEG_Email_DQU__c}<br />T.: {!opp.IEG_Useradmin__r.Phone}<br /></mj-text>
+        <mj-text font-family="Open Sans, Arial" color="#444" font-size="11px" line-height="20px">
+          Calle Gustavo Fernández Balbuena, 11 | 28002 Madrid | Spain
+        </mj-text>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="left">
+          <mj-social-element name="facebook" href="https://www.facebook.com/enforex" src="https://static.donquijote.org/images/firmas/facebook.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="instagram" href="https://www.instagram.com/enforex_schools/" src="https://static.donquijote.org/images/firmas/instagram.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+          <mj-social-element name="youtube" href="https://www.youtube.com/user/enforexschools/" src="https://static.donquijote.org/images/firmas/yotube.jpg" background-color="#fff" padding-left="0"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#004890" padding="10px">
+      <mj-column>
+        <mj-image width="126px" src="https://www.enforex.com/images/crm/logo-footer-crm.png" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" padding="10px">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

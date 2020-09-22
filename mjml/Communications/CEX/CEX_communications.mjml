@@ -1,0 +1,45 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" />
+  </mj-head>
+  <mj-body width="700px" background-color="#fff">
+    <mj-section background-color="#fff">
+      <mj-column>
+        <mj-text font-family="Open Sans" line-height="150%" font-size="14px">
+          <h3>Dear ...</h3>
+          <p>Enforex, the leading Spanish teaching institution, would like to announce its 2020 Scholarship Program, comprising 200 scholarships to study Spanish abroad.</p>
+          <p>If you're thinking about leading a language and cultural immersion abroad, we'll help you draft a unique and customized program for you and your students.</p>
+          <p>Click on the links below to get inspired with some of our most popular Faculty-Led programs:</p>
+          <ul style="list-style:none;padding:0;line-height:200%;font-size:13px">
+            <li><b><a href="#" style="color:#444">Spring Break in Barcelona</a></b> | 1 week | Starting 600 €</li>
+            <li><b><a href="#" style="color:#444">Summer Immersion in Madrid and Valencia</a></b> | 3 weeks combining destinations | Starting 1600 €</li>
+            <li><b><a href="#" style="color:#444">Spanish Teachers Training Lab in Salamanca</a></b> | 2 weeks + STEM vocabulary | Starting 1000 €</li>
+            <li><b><a href="#" style="color:#444">Spanish for Health Professionals in Costa Rica</a></b> | 2 weeks | Starting $1300</li>
+            <li><b><a href="#" style="color:#444">Language & Cultural Immersion in Playa del Carmen</a></b> | 4 weeks + Service Learning | Starting $2000</li>
+            <li><b><a href="#" style="color:#444">Enforex Summer Camps for Kids 5-18</a></b> | 1 week all inclusive | Starting 795 €</li>
+          </ul>
+          <p>Note: all our programs are personalized, include a free leader, and 1 scholarship every 8 students.</p>
+          <p>Are you interested in getting a quotation, or updated materials? Please feel free to contact us so we can send you our Enforex brochure.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff" text-align="left">
+      <mj-column vertical-align="middle" width="30%">
+        <mj-image align="left" src="https://www.enforex.com/images/newsletter/logo-newsletter.png"></mj-image>
+      </mj-column>
+      <mj-column>
+        <mj-text font-family="Open Sans">
+          <h3 style="color:#004890">Claudia Barquet</h3>
+          <small style="display:block;line-height:160%;font-size:11px;color:#7d7d7d">
+            <b>Study Abroad Director</b><br />
+            <a href="mailto:claudia.barquet@enforex.es" style="color:#004890;">claudia.barquet@enforex.es</a><br />
+            <b>Tel.:</b> +34 91 593 13 36<br />
+            Gustavo Fernández de Balbuena, 11 | 28002 Madrid | ES<br />
+            <a href="https://www.enforex.com" style="color:#004890;">www.enforex.com</a>
+          </small>
+
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

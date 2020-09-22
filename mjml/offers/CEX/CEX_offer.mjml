@@ -1,0 +1,114 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Lato" href="https://fonts.googleapis.com/css?family=Lato:400,900" />
+  </mj-head>
+  <mj-body width="700px" background-color="#F9F9F9">
+    <mj-raw>
+    <!-- LOGO DE EMAIL -->
+    </mj-raw>
+    <mj-section background-color="#F9F9F9">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#fff">
+      <mj-column>
+        <mj-image align="left" width="200px" src="https://www.enforex.es/images/email/logo-cex.jpg"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /LOGO DE EMAIL -->
+    </mj-raw>
+    <mj-raw>
+    <!-- TITULO DE EMAIL -->
+    </mj-raw>
+    <mj-section background-color="#fff" padding="0" padding-top="30px" >
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="28px" line-height="35px" align="center">
+          <span style="color: #BABABA; font-weigth:300;">Begin your <b style="display:block;color:#ee2f53">learning voyage in Spanish</b></span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /TITULO DE EMAIL -->
+    </mj-raw>
+    <mj-raw>
+    <!-- FOTO DE OFERTA -->
+    </mj-raw>
+     <mj-section background-color="#fff">
+      <mj-column>
+        <mj-image src="https://fakeimg.pl/700x300/" />
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /FOTO DE OFERTA -->
+    </mj-raw>
+    <mj-raw>
+    <!-- TITULO DE OFERTA -->
+    </mj-raw>
+    <mj-section background-color="#fff" padding="30px" padding-bottom="0">
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="16px" color="#383838" >
+          <h2 style="margin:0; color: #444">Learning voyage in Spanish</h2>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /TITULO DE OFERTA -->
+    </mj-raw>
+    <mj-raw>
+    <!-- TEXTO DE OFERTA -->
+    </mj-raw>
+    <mj-section background-color="#fff" padding="30px" padding-top="0">
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="16px" line-height="25px" color="#383838">
+          <p>Spain, Mexico, Argentina, Costa Rica…where would you like to learn Spanish?<br/><br/>don Quijote offers immersive language experiences in 30 schools across 13 countries: a great mix of learning, traveling, and getting to know your chosen destination. The hardest part is deciding where to go!  <br/><br/>Take advantage of our special offer and get a <b>20% discount</b> on your Spanish course, but only for a limited time! <br/><br/>Don't wait — it’s time to put your finger on a spinning globe and find a place to begin your language journey.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /TEXTO DE OFERTA -->
+    </mj-raw>
+    <mj-raw>
+    <!-- BOTON DE OFERTA -->
+    </mj-raw>
+    <mj-section background-color="#fff" padding="30px" padding-top="0">
+      <mj-column>
+            <mj-button font-family="Lato, Arial" background-color="#ee2f53" color="white"  inner-padding="18px 25px" href="https://www.enforex.es/">
+            <span style="font-weight:700;text-transform:uppercase;font-size:13px">More information</span>
+         </mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /BOTON DE OFERTA -->
+    </mj-raw>
+    <mj-raw>
+    <!-- BOTON DE OFERTA -->
+    </mj-raw>
+    <mj-section background-color="#fff" padding="30px" padding-top="40px" padding-bottom="10px">
+      <mj-column>
+      <mj-divider border-width="1px" border-style="solid" border-color="#D8D8D8" />
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /BOTON DE OFERTA -->
+    </mj-raw>
+    <mj-raw>
+    <!-- BOTON DE OFERTA -->
+    </mj-raw>
+    <mj-section background-color="#fff" padding="30px" padding-top="0">
+      <mj-column>
+        <mj-text font-family="Lato, Arial" font-size="11px" line-height="17px" color="#B0B0B0" align="center" >
+          <p>Please do not reply to this email. If you want to contact Enforex, use our <a href="https://www.enforex.com/contact.html" style="color:#004990; text-decoration: none">contact form</a>.<br/> Copyright © 2006-%%=Format(Now(), "yyyy")=%%
+                          Ideal Education Group<br/> If you don't want to receive these emails anymore: <a href="https://www.enforex.com/gdpr/?marca=ENF&email=%%EmailAddr%%" style="color:#004990; text-decoration: none">Unsubscribe</a>.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+    <!-- /BOTON DE OFERTA -->
+    </mj-raw>
+    <mj-section background-color="#F9F9F9">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
